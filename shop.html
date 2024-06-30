@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fuchen's Shop</title>
+    <link rel="icon" type="image/x-icon" href="/assets/img/logo.png">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/img/">
+    <link rel="stylesheet" href="assets/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="assets/responsive.css">
+    <link rel="stylesheet" href="index.html">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <input type="checkbox" id="checkbox-mobile" style="display: none;">
+            <label class="mobile-menu" for="checkbox-mobile"><i class="ti-menu"></i></label>
+            <div class="nav">
+                <a href="index.html" class="nav-items">HOME</a>
+                <a href="shop.html" class="nav-items">SHOP</a>
+                <a href="comming.html" class="nav-items">BLOG</a>
+                <a href="comming.html" class="nav-items">FEATURES</a>
+            </div>
+            <a href="index.html" class="logo">FuChen'sShop</a>
+            <div class="navbar">
+                <a href="#" class="navbar-icon">
+                    <i class="ti-location-pin"></i>
+                </a>
+                <a href="#" class="navbar-icon">
+                    <i class="ti-user"></i>
+                </a>
+                <a href="#" class="navbar-icon">
+                    <i class="ti-email"></i>
+                </a>
+                <a href="#" class="navbar-icon">
+                    <i class="ti-heart"></i>
+                </a>
+                
+                    <i class="ti-shopping-cart">
+                        <div class="navbar-cart">
+                            <div class="cart-contain">
+                            <div class="cart-item">
+                                <img class="cart-img" src="https://product.hstatic.net/1000340570/product/dolce-_-gabbana-the-one-gold-for-men.jpg1_29f71da609fc4f1a8c2d2cd40a977263_master.jpg" alt="">
+                                <div class="cart-name">
+                                    <h1>D&G Perfume</h1>
+                                    <div class="soluong">x4</div>
+                                </div>
+                                <div class="cart-close">X</div>
+                            </div>
+                            <div class="cart-item">
+                                <img class="cart-img" src="https://mcdn.coolmate.me/uploads/October2021/sweater-voi-quan-jeans.jpg" alt="">
+                                <div class="cart-name">
+                                    <h1>Jean & Sweater</h1>
+                                    <div class="soluong">x1</div>
+                                </div>
+                                <div class="cart-close">X</div>
+                            </div>
+                            <div class="cart-item">
+                                <img class="cart-img" src="https://cdn11.bigcommerce.com/s-kfhji/images/stencil/1280x1280/products/1345/53600/classic-multiway-infinity-bridesmaids-dress-hunter-green-1__04228.1700456519.jpg?c=2" alt="">
+                                <div class="cart-name">
+                                    <h1>Green Dress</h1>
+                                    <div class="soluong">x2</div>
+                                </div>
+                                <div class="cart-close">X</div>
+                            </div>
+                            <div class="cart-item">
+                                <img class="cart-img" src="https://i.pinimg.com/736x/61/97/bf/6197bf516fa4e49845efaebaf683882e.jpg" alt="">
+                                <div class="cart-name">
+                                    <h1>Kids Clothes</h1>
+                                    <div class="soluong">x3</div>
+                                </div>
+                                <div class="cart-close">X</div>
+                            </div>
+                            <div class="cart-item">
+                                <img class="cart-img" src="https://content.moss.co.uk/images/extraextralarge/8a18e058-81fd-4d20-b34a-5c6569364182.jpg" alt="">
+                                <div class="cart-name">
+                                    <h1>Shirt</h1>
+                                    <div class="soluong">x5</div>
+                                </div>
+                                <div class="cart-close">X</div>
+                            </div>
+                            <div class="cart-item">
+                                <img class="cart-img" src="https://raoul-e.com/cdn/shop/products/230_005_600x.jpg?v=1639043994" alt="">
+                                <div class="cart-name">
+                                    <h1>Unisex Suit</h1>
+                                    <div class="soluong">x2</div>
+                                </div>
+                                <div class="cart-close">X</div>
+                            </div>
+                            <div class="cart-item">
+                                <img class="cart-img" src="https://img.ltwebstatic.com/images3_spmp/2023/12/03/58/1701595154d4560f520502e5f34c72c52cf38c20c8_thumbnail_720x.jpg" alt="">
+                                <div class="cart-name">
+                                    <h1>Cowboy Hat</h1>
+                                    <div class="soluong">x4</div>
+                                </div>
+                                <div class="cart-close">X</div>
+                            </div>
+                            <div class="cart-item">
+                                <img class="cart-img" src="data:image/jpeg;base64,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" alt="">
+                                <div class="cart-name">
+                                    <h1>Sunglasses</h1>
+                                    <div class="soluong">x3</div>
+                                </div>
+                                <div class="cart-close">X</div>
+                            </div>
+                        </div>
+                        <div class="cart-view">
+                            <a href="#" class="cart-view-btn">View Cart</a>
+                            <p class="cart-total">Total: $31104</p>
+                        </div>
+                    </div>
+                    </i>
+                
+            </div>
+           
+        </div>
+        <div id="shop">
+            <div class="shop-contain">
+                <div class="shop-product">
+                    <div class="shop-content">
+                        <div class="shop-buy">
+                            <img class="img-shop" src="https://product.hstatic.net/1000340570/product/dolce-_-gabbana-the-one-gold-for-men.jpg1_29f71da609fc4f1a8c2d2cd40a977263_master.jpg" alt="clothes"/>
+                            <div class="shop-pro-info">
+                                <h1 class="shop-info-tile">D&G Perfume</h1>
+                                <p class="shop-cost">$560</p>
+                                <button class="addtocart">ADD TO CART</button>
+                                <i class="shop-love ti-heart"></i>    
+                            </div>
+                        </div>
+                        <div class="shop-buy">
+                            <img class="img-shop" src="https://mcdn.coolmate.me/uploads/October2021/sweater-voi-quan-jeans.jpg" alt="clothes"/>
+                            <div class="shop-pro-info">
+                                <h1 class="shop-info-tile">Sweater & Jean</h1>
+                                <p class="shop-cost">$300</p>
+                                <button class="addtocart">ADD TO CART</button>
+                                <i class="shop-love ti-heart"></i>    
+                            </div>
+                        </div>
+                        <div class="shop-buy">
+                            <img class="img-shop" src="https://pbs.twimg.com/media/EY8i9BxXgAE2Bo9?format=jpg&name=large" alt="clothes"/>
+                            <div class="shop-pro-info">
+                                <h1 class="shop-info-tile"> Shirt & Shoes</h1>
+                                <p class="shop-cost">$350</p>
+                                <button class="addtocart">ADD TO CART</button>
+                                <i class="shop-love ti-heart"></i>    
+                            </div>
+                        </div>
+                        <div class="shop-buy">
+                            <img class="img-shop" src="https://raoul-e.com/cdn/shop/products/230_005_600x.jpg?v=1639043994" alt="clothes"/>
+                            <div class="shop-pro-info">
+                                <h1 class="shop-info-tile">Unisex Suit</h1>
+                                <p class="shop-cost">$450</p>
+                                <button class="addtocart">ADD TO CART</button>
+                                <i class="shop-love ti-heart"></i>    
+                            </div>
+                        </div>
+                        <div class="shop-buy">
+                            <img class="img-shop" src="https://cdn11.bigcommerce.com/s-kfhji/images/stencil/1280x1280/products/1345/53600/classic-multiway-infinity-bridesmaids-dress-hunter-green-1__04228.1700456519.jpg?c=2" alt="clothes"/>
+                            <div class="shop-pro-info">
+                                <h1 class="shop-info-tile">Green Dress </h1>
+                                <p class="shop-cost">$120</p>
+                                <button class="addtocart">ADD TO CART</button>
+                                <i class="shop-love ti-heart"></i>    
+                            </div>
+                        </div>
+                        <div class="shop-buy">
+                            <img class="img-shop" src="https://content.moss.co.uk/images/extraextralarge/8a18e058-81fd-4d20-b34a-5c6569364182.jpg" alt="clothes"/>
+                            <div class="shop-pro-info">
+                                <h1 class="shop-info-tile">Shirt</h1>
+                                <p class="shop-cost">$50</p>
+                                <button class="addtocart">ADD TO CART</button>
+                                <i class="shop-love ti-heart"></i>    
+                            </div>
+                        </div>
+                        <div class="shop-buy">
+                            <img class="img-shop" src="https://i.pinimg.com/736x/61/97/bf/6197bf516fa4e49845efaebaf683882e.jpg" alt="clothes"/>
+                            <div class="shop-pro-info">
+                                <h1 class="shop-info-tile">Kids' Clothes</h1>
+                                <p class="shop-cost">$20-$300</p>
+                                <button class="addtocart">ADD TO CART</button>
+                                <i class="shop-love ti-heart"></i>    
+                            </div>
+                        </div>
+                        <div class="shop-buy">
+                            <img class="img-shop" src="https://files.ekmcdn.com/speedmaster/images/hand-knitted-100-wool-bobble-hat-kylemore-grey-18668-1-p.png?w=1000&h=1000&v=99C40AF5-A579-4A6E-A7B1-8D1FCD7BC87D" alt="clothes"/>
+                            <div class="shop-pro-info">
+                                <h1 class="shop-info-tile">Wool Hat</h1>
+                                <p class="shop-cost">$25</p>
+                                <button class="addtocart">ADD TO CART</button>
+                                <i class="shop-love ti-heart"></i>    
+                            </div>
+                        </div>
+                        <div class="shop-buy">
+                            <img class="img-shop" src="https://shuswapoptometric.ca/wp-content/uploads/2020/12/Shuswap-Optometric-Center_-Supporting-Img-Missing-Assets_-Sunglass-cove.1.jpg" alt="clothes"/>
+                            <div class="shop-pro-info">
+                                <h1 class="shop-info-tile">Sunglasses</h1>
+                                <p class="shop-cost">$680</p>
+                                <button class="addtocart">ADD TO CART</button>
+                                <i class="shop-love ti-heart"></i>    
+                            </div>
+                        </div>
+                        <div class="shop-buy">
+                            <img class="img-shop" src="https://img.ltwebstatic.com/images3_spmp/2023/12/03/58/1701595154d4560f520502e5f34c72c52cf38c20c8_thumbnail_720x.jpg" alt="clothes"/>
+                            <div class="shop-pro-info">
+                                <h1 class="shop-info-tile">Cowboy Hat</h1>
+                                <p class="shop-cost">$99</p>
+                                <button class="addtocart">ADD TO CART</button>
+                                <i class="shop-love ti-heart"></i>    
+
+                            </div>
+                        </div>
+                        <div class="shop-buy">
+                            <img class="img-shop" src="https://m.media-amazon.com/images/I/710+lanFebL._AC_UY350_.jpg" alt="clothes"/>
+                            <div class="shop-pro-info">
+                                <h1 class="shop-info-tile">Swim Suit</h1>
+                                <p class="shop-cost">$35</p>
+                                <button class="addtocart">ADD TO CART</button>
+                                <i class="shop-love ti-heart"></i>    
+                            </div>
+                        </div>
+                        <div class="shop-buy">
+                            <img class="img-shop" src="data:image/jpeg;base64,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" alt="clothes"/>
+                            <div class="shop-pro-info">
+                                <h1 class="shop-info-tile">Wallet</h1>
+                                <p class="shop-cost">$79</p>
+                                <button class="addtocart">ADD TO CART</button>
+                                <i class="shop-love ti-heart"></i>    
+                            </div>
+                        </div>
+                        <div class="shop-buy">
+                            <img class="img-shop" src="https://yanezliquidators.com/cdn/shop/products/IMG_1265_1024x1024.jpg?v=1575321471" alt="clothes"/>
+                            <div class="shop-pro-info">
+                                <h1 class="shop-info-tile">Perfume & High Heel</h1>
+                                <p class="shop-cost">$650</p>
+                                <button class="addtocart">ADD TO CART</button>
+                                <i class="shop-love ti-heart"></i>    
+                            </div>
+                        </div>
+                        <div class="shop-buy">
+                            <img class="img-shop" src="https://i.redd.it/dl65cuhl76qa1.jpg" alt="clothes"/>
+                            <div class="shop-pro-info">
+                                <h1 class="shop-info-tile">Jean Coat For Men</h1>
+                                <p class="shop-cost">$450</p>
+                                <button class="addtocart">ADD TO CART</button>
+                                <i class="shop-love ti-heart"></i>    
+                            </div>
+                        </div>
+                        <div class="shop-buy">
+                            <img class="img-shop" src="https://i.pinimg.com/736x/7e/43/60/7e43605fae3843ce472e9d4b58865a31.jpg" alt="clothes"/>
+                            <div class="shop-pro-info">
+                                <h1 class="shop-info-tile">Jean Coat & Hat</h1>
+                                <p class="shop-cost">$330</p>
+                                <button class="addtocart">ADD TO CART</button>
+                                <i class="shop-love ti-heart"></i>    
+                            </div>
+                        </div>
+                        <div class="shop-buy">
+                            <img class="img-shop" src="https://danawatch.vn/wp-content/uploads/2019/01/hang-dong-ho-lon-nhat-nhat-ban.jpg" alt="clothes"/>
+                            <div class="shop-pro-info">
+                                <h1 class="shop-info-tile">Watch (日本の時計）</h1>
+                                <p class="shop-cost">$699</p>
+                                <button class="addtocart">ADD TO CART</button>
+                                <i class="shop-love ti-heart"></i>    
+                            </div>
+                        </div>
+                        <div class="shop-buy">
+                            <img class="img-shop" src="https://www.ever-pretty.co.uk/cdn/shop/products/EE00116CH-R8.jpg?v=1665545448" alt="clothes"/>
+                            <div class="shop-pro-info">
+                                <h1 class="shop-info-tile">Evening Gown</h1>
+                                <p class="shop-cost">$600</p>
+                                <button class="addtocart">ADD TO CART</button>
+                                <i class="shop-love ti-heart"></i>    
+                            </div>
+                        </div>
+                        <div class="shop-buy">
+                            <img class="img-shop" src="https://hips.hearstapps.com/hmg-prod/images/2-2-1633127014.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*" alt="clothes"/>
+                            <div class="shop-pro-info">
+                                <h1 class="shop-info-tile">Jean Coat</h1>
+                                <p class="shop-cost">$459</p>
+                                <button class="addtocart">ADD TO CART</button>
+                                <i class="shop-love ti-heart"></i>    
+                            </div>
+                        </div>
+                        <div class="shop-buy">
+                            <img class="img-shop" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRW1E0X94WVPyEOzE5s9jscUQLvM7QO-c51sA&usqp=CAU" alt="clothes"/>
+                            <div class="shop-pro-info">
+                                <h1 class="shop-info-tile">Bag</h1>
+                                <p class="shop-cost">$250</p>
+                                <button class="addtocart">ADD TO CART</button>
+                                <i class="shop-love ti-heart"></i>    
+                            </div>
+                        </div>
+                        <div class="shop-buy">
+                            <img class="img-shop" src="https://i.bbcosplay.com/13822/yukata-trang-hong-5.jpg" alt="clothes"/>
+                            <div class="shop-pro-info">
+                                <h1 class="shop-info-tile">きもの</h1>
+                                <p class="shop-cost">$559</p>
+                                <button class="addtocart">ADD TO CART</button>
+                                <i class="shop-love ti-heart"></i>    
+
+                            </div>
+                        </div>
+                        <div class="shop-buy">
+                            <img class="img-shop" src="data:image/jpeg;base64,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" alt="clothes"/>
+                            <div class="shop-pro-info">
+                                <h1 class="shop-info-tile">Yellow Boots</h1>
+                                <p class="shop-cost">$299</p>
+                                <button class="addtocart">ADD TO CART</button>
+                                <i class="shop-love ti-heart"></i>    
+
+                            </div>
+                        </div>
+                        <div class="shop-buy">
+                            <img class="img-shop" src="https://authenticvietnam.vn/wp-content/uploads/vi-gucci-nu-chinh-hieu_authenticvietnam.vn_.png" alt="clothes"/>
+                            <div class="shop-pro-info">
+                                <h1 class="shop-info-tile">Gucci</h1>
+                                <p class="shop-cost">$499</p>
+                                <button class="addtocart">ADD TO CART</button>
+                                <i class="shop-love ti-heart"></i>    
+
+                            </div>
+                        </div>
+                        <div class="shop-buy">
+                            <img class="img-shop" src="https://bizweb.dktcdn.net/100/236/196/products/b3c4c1995d44891ad055-1.jpg?v=1696427266933" alt="clothes"/>
+                            <div class="shop-pro-info">
+                                <h1 class="shop-info-tile">Ao Dai</h1>
+                                <p class="shop-cost">$599</p>
+                                <button class="addtocart">ADD TO CART</button>
+                                <i class="shop-love ti-heart"></i>    
+                            </div>
+                        </div>
+                        <div class="shop-buy">
+                            <img class="img-shop" src="https://bazaarvietnam.vn/wp-content/uploads/2023/03/Jessica-Jung-mo-cua-hang-moi-Blanc-Eclare.jpg" alt="clothes"/>
+                            <div class="shop-pro-info">
+                                <h1 class="shop-info-tile">Blanc and Eclare</h1>
+                                <p class="shop-cost">$299</p>
+                                <button class="addtocart">ADD TO CART</button>
+                                <i class="shop-love ti-heart"></i>    
+                            </div>
+                        </div>
+                        <div class="shop-buy">
+                            <img class="img-shop" src="https://cdn.shopify.com/s/files/1/0456/5070/6581/files/cach-phan-biet-giay-sneaker-chinh-hang_600x600.jpg?v=1663556399" alt="clothes"/>
+                            <div class="shop-pro-info">
+                                <h1 class="shop-info-tile">Sneakers</h1>
+                                <p class="shop-cost">$99</p>
+                                <button class="addtocart">ADD TO CART</button>
+                                <i class="shop-love ti-heart"></i>    
+                            </div>
+                        </div>
+                        <div class="shop-buy">
+                            <img class="img-shop" src="data:image/jpeg;base64,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" alt="clothes"/>
+                            <div class="shop-pro-info">
+                                <h1 class="shop-info-tile">Dep to ong </h1>
+                                <p class="shop-cost">$999</p>
+                                <button class="addtocart">ADD TO CART</button>
+                                <i class="shop-love ti-heart"></i>    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-cat">
+                    <h1 class="shop-tile">Category</h1>
+                    <form class="shop-tick-contain">
+                        <div class="shop-ticks">
+                             <p><input name="gender" type="radio" value="Men" />Men</p>
+                             <p><input name="gender" type="radio" value="Women" />Women</p>
+                             <p><input name="gender" type="radio" value="Kis" />Kids</p>
+                        </div>
+                        <div class="shop-ticks">
+                            <p><input name="gender" type="radio" value="Accesories" />Accessories</p>
+                            <p><input name="gender" type="radio" value="Technology" />Technology</p>
+                            <p><input name="gender" type="radio" value="All" />All</p>
+                        </div>
+                    </form>
+                    <div class="slidecontainer">
+                        <input type="range" min="1" max="700" value="50" class="slider-range" id="myRange">
+                        <p>$<span id="demo"></span></p>
+                    </div>
+                    <p>Color of Products:</p>
+                    <div class="shop-color">
+                        <div class="color1  color"></div>
+                        <div class="color2 color"></div>
+                        <div class="color4 color"></div>
+                        <div class="color3 color"></div>
+                        <div class="color5 color"></div>
+                    </div>
+                    <p>Size of Products:</p>
+                    <div class="shop-size">
+                        <div class="size-pro color4">L</div>
+                        <div class="size-pro">M</div>
+                        <div class="size-pro color5">S</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+
+            <div class="footer-social">
+                <a href="https://twitter.com/?lang=vi" class="footer-media back1"><i class="icon-footer ti-twitter-alt"></i>TWITTER</a>
+                <a href="https://www.facebook.com/" class="footer-media back2"><i class="icon-footer ti-facebook"></i>FACEBOOK</a>
+                <a href="https://www.youtube.com/" class="footer-media back3"><i class="ti-youtube icon-footer"></i>YOUTUBE</a>
+            </div>
+            <div class="footer-info">
+                <div class="footer-shop">
+                    <h1 class="footer-heading">FuChen'sShop</h1>
+                    <p class="footer-sub">Shop is a powerful shop theme created by Phu.
+                        It’s powered by Visual Studio Code and is highly customizable.
+                    </p>
+                    <button class="ft-download">DOWNLOAD</button>
+                </div>
+                <div class="footer-scinfo">
+                    <h1 class="footer-heading">Social</h1>
+                    <a href="https://twitter.com/?lang=vi" class="footer-sub"><i class="icon-footer ti-twitter-alt"></i>TWITTER</a>
+                    <a href="https://www.facebook.com/" class="footer-sub"><i class="icon-footer ti-facebook"></i>FACEBOOK</a>
+                    <a href="https://www.youtube.com/" class="footer-sub"><i class="ti-youtube icon-footer"></i>YOUTUBE</a>
+                    <a href="https://www.instagram.com/" class="footer-sub"><i class="ti-instagram icon-footer"></i>INSTAGRAM</a>
+                </div>
+                <div class="footer-cat">
+                    <h1  class="footer-heading">Categories</h1>
+                    <a href="#" class="footer-sub">Accesories</a>
+                    <a href="#" class="footer-sub">Kids</a>
+                    <a href="#" class="footer-sub">Man</a>
+                    <a href="#" class="footer-sub">Woman</a>
+                    <a href="#" class="footer-sub">Technology</a>
+                </div>
+                <div class="footer-about">
+                    <h1 class="footer-heading">About</h1>
+                    <a href="#" class="footer-sub">Location</a>
+                    <a href="#" class="footer-sub">Company</a>
+                    <a href="#" class="footer-sub">Team</a>
+                    <a href="#" class="footer-sub">Our Story</a>
+                    <a href="#" class="footer-sub">Investors</a>
+                </div>
+                <div class="footer-sp">
+                    <h1 class="footer-heading">Support</h1>
+                    <a href="#" class="footer-sub">Order</a>
+                    <a href="#" class="footer-sub">Refund</a>
+                    <a href="#" class="footer-sub">Complaint</a>
+                    <a href="#" class="footer-sub">Help</a>
+                    <a href="#" class="footer-sub">Contact</a>
+                </div>
+            </div>
+       
+        </div>
+    </div>
+    <script>
+        var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        /* Hiển thị giá trị mặc định 50 cho thẻ span với id là demo*/
+        output.innerHTML = slider.value; 
+        /* cập nhật giá trị hiện tại của ranger slider*/
+        slider.oninput = function() {
+        output.innerHTML = this.value;
+        }
+    </script>
+</body>
+</html>
